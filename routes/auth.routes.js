@@ -46,7 +46,7 @@ router.post('/login', async (req, res, next) => {
                 delete loggedUser.passwordHash
                 console.log(loggedUser)
                 req.session.user = loggedUser
-                res.redirect('/profile')
+                res.redirect('/main')
             } else {
                // Password is incorrect 
                console.log('Password is incorrect')
@@ -82,6 +82,9 @@ router.post('/login', async (req, res, next) => {
 router.get('/login', (req, res, next) => {
     res.render('auth/login')
 })
+
+
+
 
 
 

@@ -1,8 +1,89 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color:rgb(153, 168, 185);
+  color: rgb(9, 9, 102);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 a {
-  color: #00B7FF;
+  color: rgb(94, 255, 250);
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: -0.1em;
+  font-size: 1rem;
+}
+
+h1{
+  font-size: 6rem;
+  text-transform: uppercase;
+  letter-spacing: -0.1em;
+  font-weight:bold;
+  margin-top: 1em;
+  
+  
+}
+
+nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:space-evenly;
+  margin-bottom: 3em;
+  
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+  gap: 6em;
+  text-transform:uppercase;
+  
+}
+
+.form-wrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  align-items: center;
+}
+
+button{
+  padding: 12 26;
+  width: 20vw;
+  height: 30px;
+  background-color:rgb(94, 255, 250);
+  border-radius: 50px;
+  border: 2px solid  rgb(9, 9, 102);
+  font-weight: 600;
+  letter-spacing: -0.05em;
+}
+
+button:hover{
+  padding: 12 26;
+  width: 20vw;
+  height: 30px;
+  background-color:rgba(94, 255, 250, 0.707);
+  border-radius: 50px;
+  border: none;
+  
+}
+
+input{
+  width: 20vw;
+  height: 20px;
+}
+
+.round{
+border-radius: 20px;
 }
